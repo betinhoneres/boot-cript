@@ -1,10 +1,11 @@
 const axios = require("axios");
 const api = require("imersao-bot-cripto-api");
+require('dotenv/config');
 
 const credentials = {
-    apiKey: "<sua api key>",
-    apiSecret: "<seu api secret>",
-    test: true
+    apiKey: process.env.API_KEY,
+    apiSecret: process.env.API_SECRET,
+    test: process.env.API_TEST
 }
 
 function calcRSI(closes) {
