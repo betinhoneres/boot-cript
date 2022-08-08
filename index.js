@@ -26,7 +26,7 @@ function calcRSI(closes) {
 
 let bought = true;
 
-async function process() {
+async function process_symbol() {
     const symbol = "BTCBUSD";
     const quantity = 0.001;
 
@@ -50,6 +50,6 @@ async function process() {
     }
 }
 
-setInterval(process, 60000);
+setInterval(process_symbol, 60000);
 
-process();
+process_symbol();
